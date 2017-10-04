@@ -15,7 +15,7 @@ class a ():
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36',
             'referer': 'https://www.daydaycook.com'}
         cnx = databaseConfig.dbconn("")
-        for a in range(1,196):
+        for a in range(122,123):
             display = Display(visible=0, size=(800, 600))
             display.start()
 
@@ -100,8 +100,9 @@ class a ():
                  except TypeError as e:
                      print(e)
                      print "error"
-
                  time.sleep(2)
+
+        cnx.close()
 
 
 
